@@ -2,7 +2,7 @@
   "name": "ember-auth",
   "filename": "ember-auth.min.js",
   "version": "9.0.7",
-  "description": "Authentication framework for Ember.js.",
+  "description": "Authentication framework for ember.js.",
   "homepage": "http://ember-auth.herokuapp.com/",
   "keywords": [
     "ember",
@@ -18,10 +18,9 @@
       "email": "heartsentwined.me@gmail.com"
     }
   ],
-  "repositories": [
-    {
-      "type": "git",
-      "url": "https://github.com/heartsentwined/ember-auth"
-    }
-  ]
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/heartsentwined/ember-auth"
+  },
+  "license": "MIT"
 }

@@ -1,9 +1,9 @@
 {
   "name": "requirejs-handlebars",
-  "filename": "hbars.js",
+  "filename": "hbars.min.js",
   "version": "0.0.2",
-  "description": "A RequireJS/AMD loader plugin for Handlebars.js micro-templates",
-  "homepage": "http://github.com/jfparadis/requirejs-handlebars",
+  "description": "RequireJS Handlebars template plugin",
+  "homepage": "https://github.com/jfparadis/requirejs-handlebars",
   "keywords": [
     "require",
     "requirejs",
@@ -17,10 +17,9 @@
       "web": "http://jeanfrancoisparadis.com/"
     }
   ],
-  "repositories": [
-    {
-      "type": "git",
-      "url": "https://github.com/jfparadis/requirejs-handlebars"
-    }
-  ]
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jfparadis/requirejs-handlebars"
+  },
+  "license": "MIT"
 }

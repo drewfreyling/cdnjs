@@ -1,10 +1,9 @@
 {
   "name": "mvw-injection",
-  "version": "0.2.3",
+  "version": "0.2.4",
   "description": "Dependency Injection module for MV-Whatever patterns!",
   "homepage": "https://github.com/XavierBoubert/mvc-injection",
   "filename": "dependency-injection.min.js",
-  "main": "dist/dependency-injection.js",
   "license": "MIT",
   "keywords": [
     "mvc",
@@ -15,16 +14,9 @@
     "injection"
   ],
   "author": "Xavier Boubert <xavier@boubert.fr>",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "gulp"
-  },
   "repository": {
     "type": "git",
     "url": "https://github.com/XavierBoubert/mvw-injection.git"
-  },
-  "bugs": {
-    "url": "https://github.com/XavierBoubert/mvw-injection/issues"
   },
   "npmName": "mvw-injection",
   "npmFileMap": [

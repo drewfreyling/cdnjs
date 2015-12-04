@@ -1,10 +1,10 @@
 {
   "name": "hellojs",
-  "version": "1.6.0",
+  "version": "1.9.8",
   "description": "A clientside Javascript library for standardizing requests to OAuth2 web services (and OAuth1 - with a shim)",
   "repository": {
     "type": "git",
-    "url": "git@github.com/MrSwitch/hello.js"
+    "url": "git://github.com/MrSwitch/hello.js"
   },
   "keywords": [
     "oauth",
@@ -19,9 +19,6 @@
   ],
   "author": "Andrew Dodson <adodson.com>",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/MrSwitch/hello.js/issues"
-  },
   "filename": "hello.all.min.js",
   "autoupdate": {
     "source": "git",

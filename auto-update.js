@@ -8,7 +8,19 @@ var path = require("path"),
     request = require("superagent"),
     async = require("async"),
     tarball = require('tarball-extract'),
-    colors = require('colors')
+    colors = require('colors'),
+    isThere = require("is-there"),
+    libMatch = '*',
+    stable = require('semver-stable'),
+    semver = require('semver');
+
+
+if(!fs.existsSync('/run/shm')) {
+  tempDirPath = path.join(__dirname, 'temp');
+} else {
+  fs.mkdirsSync('/run/shm/cdnjs_NPM_temp');
+  tempDirPath = '/run/shm/cdnjs_NPM_temp';
+}
 
 colors.setTheme({
   prompt: 'cyan',
@@ -146,6 +158,7 @@ var processNewVersion = function(pkg, version){
             if(files.length == 0){
               //usually old versions have this problem
               var msg = (pkg.npmName + "@" + version + " - couldnt find file in npmFileMap.") + (" Doesnt exist: " + path.join(libContentsPath, file)).info;
+              fs.mkdirsSync(libPath);
               console.log(msg);
             }
 
@@ -157,7 +170,7 @@ var processNewVersion = function(pkg, version){
                 var copyPart = path.relative(libContentsPath, extractFilePath);
                 var copyPath = path.join(libPath, copyPart)
                 fs.mkdirsSync(path.dirname(copyPath))
-                fs.renameSync(extractFilePath, copyPath);
+                fs.copySync(extractFilePath, copyPath);
                 updated = true;
             });
         });
@@ -166,16 +179,18 @@ var processNewVersion = function(pkg, version){
       newVersionCount++;
         var libPatha =path.normalize(path.join(__dirname, 'ajax', 'libs', pkg.name, 'package.json'));
         console.log('------------'.red, libPatha.green);    
-        pkg.version = version;
+        if (stable.is(version) && semver.gt(version, pkg.version)) {
+          pkg.version = version;
 
-        fs.writeFileSync(libPatha, JSON.stringify(pkg, null, 2) + '\n', 'utf8');
+          fs.writeFileSync(libPatha, JSON.stringify(pkg, null, 2) + '\n', 'utf8');
+        }
     }
     return errors;
 }
 
 
 var getPackageTempPath = function(pkg, version){
-    return path.normalize(path.join(__dirname, 'temp', pkg.name, version))
+    return path.normalize(path.join(tempDirPath, pkg.name, version))
 }
 var getPackagePath = function(pkg, version){
     return path.normalize(path.join(__dirname, 'ajax', 'libs', pkg.name, version));
@@ -206,6 +221,9 @@ var updateLibraryVersion = function(pkg, tarballUrl, version, cb) {
                 var msg = "Do not have version " + version + " of " + pkg.npmName;
                 console.log(msg.warn);
             } else {
+                if ('Server respond 404' == result.error) {
+                    fs.mkdirsSync('./ajax/libs/' + pkg.name + '/' + version);
+                }
                 var msg = "error downloading " + version + " of " + pkg.npmName + " it didnt exist: " + result + err;
                 console.log(msg.error);
             }
@@ -229,30 +247,38 @@ var updateLibrary = function (pkg, cb) {
         return cb(null);
     }
     var msg = 'Checking versions for ' + pkg.npmName;
+    if (pkg.name != pkg.npmName) {
+      msg += ' (' + pkg.name + ')';
+    }
     console.log(msg.prompt);
-    request.get('http://registry.npmjs.org/' + pkg.npmName, function(result) {
-        async.eachLimit(_.pairs(result.body.versions), maxWorker, function(p, cb){
-            var data = p[1];
-            var version = p[0];
-            updateLibraryVersion(pkg, data.dist.tarball, version, cb)
-        }, function(err){
-        var msg = 'Library finished' + (err ? ' ' + err.error : '');
-        console.log(msg);
-            cb(null);
-        });
+    request.get('http://registry.npmjs.org/' + pkg.npmName).end(function(error, result) {
+        if (result.body != undefined) {
+            async.each(_.pairs(result.body.versions), function(p, cb){
+                var data = p[1];
+                var version = p[0];
+                updateLibraryVersion(pkg, data.dist.tarball, version, cb)
+            }, function(err){
+            var msg = 'Library finished' + (err ? ' ' + err.error : '');
+            console.log(msg);
+                cb(null);
+            });
+        } else {
+            error('Got error!', pkg.name);
+        }
     });
 }
 
 exports.run = function(){
-    fs.removeSync(path.join(__dirname, 'temp'))
+    fs.removeSync(path.join(tempDirPath, '/*'))
 
-    process.on('uncaughtException', function(){
-      fs.removeSync(path.join(__dirname, 'temp'))
-    })
     console.log('Looking for npm enabled libraries...');
 
     // load up those files
-    var packages = glob.sync("./ajax/libs/*/package.json");
+    if (args.length === 2 && isThere('./ajax/libs/' + args[1] + '/package.json')) {
+        var packages = glob.sync("./ajax/libs/" + args[1]+ "/package.json");
+    } else {
+        var packages = glob.sync("./ajax/libs/*/package.json");
+    }
     packages = _(packages).map(function (pkg) {
         var parsedPkg = parse(pkg);
         return (parsedPkg.npmName && parsedPkg.npmFileMap) ? parsedPkg : null;
@@ -260,10 +286,10 @@ exports.run = function(){
     var msg = 'Found ' + packages.length + ' npm enabled libraries';
     console.log(msg.prompt);
 
-    async.eachLimit(packages, maxWorker, updateLibrary, function(err) {
+    async.each(packages, updateLibrary, function(err) {
         var msg = 'Auto Update Completed - ' + newVersionCount + ' versions were updated';
         console.log(msg.prompt);
-        fs.removeSync(path.join(__dirname, 'temp'))
+        fs.removeSync(path.join(tempDirPath, '/*'))
     });
 }
 exports.updateLibrary = updateLibrary;
@@ -277,8 +303,8 @@ exports.invalidNpmName = invalidNpmName;
 
 var args = process.argv.slice(2);
 if(args.length > 0 && args[0] == 'run'){
-    maxWorker = (args[1] == 'serial') ? 1 : 8;
-    exports.run()
+    exports.run();
+
 } else {
     console.log('to start, pass the "run" arg'.prompt)
 }

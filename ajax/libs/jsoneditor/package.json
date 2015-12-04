@@ -9,23 +9,16 @@
     "html",
     "editor"
   ],
-  "licenses": [
-    {
-      "type": "Apache License 2.0",
-      "url": "http://www.apache.org/licenses/"
-    }
-  ],
   "author": {
     "name": "Jos de Jong",
-    "web": "http://github.com/wjosdejong"
+    "web": "https://github.com/wjosdejong"
   },
   "maintainers": [
     {
       "name": "Jos de Jong",
-      "web": "http://github.com/wjosdejong"
+      "web": "https://github.com/wjosdejong"
     }
   ],
-  "bugs": "http://github.com/wjosdejong/jsoneditoronline/issues",
   "repository": {
     "type": "git",
     "url": "git://github.com/wjosdejong/jsoneditoronline.git"
@@ -43,5 +36,6 @@
         "jsoneditor.map"
       ]
     }
-  ]
+  ],
+  "license": "Apache-2.0"
 }

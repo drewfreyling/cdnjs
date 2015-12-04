@@ -1,8 +1,8 @@
 {
   "name": "metisMenu",
   "filename": "metisMenu.min.js",
-  "version": "2.0.2",
-  "description": "Easy menu jQuery plugin for Twitter Bootstrap 3",
+  "version": "2.2.0",
+  "description": "A jQuery menu plugin",
   "homepage": "https://github.com/onokumus/metisMenu",
   "keywords": [
     "twitter",
@@ -22,12 +22,6 @@
       "url": " http://onokumus.com/"
     }
   ],
-  "repositories": [
-    {
-      "type": "git",
-      "url": "https://github.com/onokumus/metisMenu.git"
-    }
-  ],
   "autoupdate": {
     "source": "git",
     "target": "git://github.com/onokumus/metisMenu.git",
@@ -35,5 +29,10 @@
     "files": [
       "*"
     ]
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/onokumus/metisMenu.git"
+  },
+  "license": "MIT"
 }

@@ -2,7 +2,7 @@
   "name": "draggabilly",
   "filename": "draggabilly.pkgd.min.js",
   "version": "1.2.4",
-  "description": "Draggabilly is Javascript library to make elements draggable. When dragging, Draggabillly will add the class .is-dragging to the element. The minified source draggabilly.pkgd.min.js is on http://draggabilly.desandro.com/",
+  "description": "make that shiz draggable",
   "homepage": "http://draggabilly.desandro.com/",
   "keywords": [
     "draggable",
@@ -14,12 +14,6 @@
       "web": "http://desandro.com/"
     }
   ],
-  "repositories": [
-    {
-      "type": "git",
-      "url": "https://github.com/desandro/draggabilly"
-    }
-  ],
   "autoupdate": {
     "source": "git",
     "target": "git://github.com/desandro/draggabilly.git",
@@ -28,5 +22,10 @@
       "draggabilly.pkgd.js",
       "draggabilly.pkgd.min.js"
     ]
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/desandro/draggabilly"
+  },
+  "license": "MIT"
 }

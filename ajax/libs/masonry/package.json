@@ -1,7 +1,7 @@
 {
   "name": "masonry",
   "filename": "masonry.pkgd.min.js",
-  "version": "3.3.0",
+  "version": "3.3.2",
   "description": "Cascading grid layout library",
   "homepage": "http://masonry.desandro.com/",
   "keywords": [
@@ -16,12 +16,6 @@
       "web": "http://desandro.com"
     }
   ],
-  "repositories": [
-    {
-      "type": "git",
-      "url": "https://github.com/desandro/masonry"
-    }
-  ],
   "autoupdate": {
     "source": "git",
     "target": "git://github.com/desandro/masonry.git",
@@ -29,5 +23,10 @@
     "files": [
       "*"
     ]
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/desandro/masonry"
+  },
+  "license": "MIT"
 }

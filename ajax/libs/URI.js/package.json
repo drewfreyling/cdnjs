@@ -1,8 +1,8 @@
 {
   "name": "URI.js",
   "filename": "URI.min.js",
-  "version": "1.15.1",
-  "description": "URI.js is a javascript library for working with URLs. It offers a \"jQuery-style\" API (Fluent Interface, Method Chaining) to read and write all regular components and a number of convenience methods like .directory() and .authority(). URI.js offers simple, yet powerful ways of working with query string, has a number of URI-normalization functions and converts relative/absolute paths.",
+  "version": "1.17.0",
+  "description": "URI.js is a Javascript library for working with URLs.",
   "homepage": "http://medialize.github.com/URI.js/",
   "keywords": [
     "uri",
@@ -29,15 +29,9 @@
       "web": "http://rodneyrehm.de/en/"
     }
   ],
-  "repositories": [
-    {
-      "type": "git",
-      "url": "https://github.com/medialize/URI.js"
-    }
-  ],
   "autoupdate": {
     "source": "git",
-    "target": "git@github.com:medialize/URI.js.git",
+    "target": "git://github.com/medialize/URI.js.git",
     "basePath": "src",
     "files": [
       "IPv6.js",
@@ -51,5 +45,10 @@
       "URI.js",
       "URI.min.js"
     ]
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/medialize/URI.js"
+  },
+  "license": "MIT"
 }

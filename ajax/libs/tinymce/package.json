@@ -1,8 +1,8 @@
 {
   "name": "tinymce",
   "filename": "tinymce.min.js",
-  "version": "4.1.10",
-  "description": "TinyMCE is a platform independent web based Javascript HTML WYSIWYG editor",
+  "version": "4.3.1",
+  "description": "TinyMCE rich text editor",
   "homepage": "http://www.tinymce.com",
   "keywords": [
     "tinymce",
@@ -13,12 +13,6 @@
     {
       "name": "TinyMCE",
       "web": "http://www.tinymce.com"
-    }
-  ],
-  "repositories": [
-    {
-      "type": "git",
-      "url": "https://github.com/tinymce/tinymce.git"
     }
   ],
   "npmName": "tinymce",
@@ -36,5 +30,9 @@
         "plugins/*"
       ]
     }
-  ]
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tinymce/tinymce.git"
+  }
 }

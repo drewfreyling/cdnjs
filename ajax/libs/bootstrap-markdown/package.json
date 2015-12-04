@@ -16,12 +16,6 @@
       "web": "https://github.com/toopay"
     }
   ],
-  "repositories": [
-    {
-      "type": "git",
-      "url": "https://github.com/toopay/bootstrap-markdown.git"
-    }
-  ],
   "npmName": "bootstrap-markdown",
   "npmFileMap": [
     {
@@ -31,5 +25,10 @@
         "js/bootstrap-markdown.js"
       ]
     }
-  ]
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/toopay/bootstrap-markdown.git"
+  },
+  "license": "Apache-2.0"
 }

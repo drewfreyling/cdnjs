@@ -1,14 +1,7 @@
 {
   "name": "github-org-members.js",
-  "version": "1.0.0",
+  "version": "1.2.0",
   "description": "A JavaScript library for fetching and rendering in HTML the members of a GitHub organization.",
-  "main": "src/github-org-members.js",
-  "directories": {
-    "example": "example"
-  },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "repository": {
     "type": "git",
     "url": "https://github.com/IonicaBizau/github-org-members.js"
@@ -20,9 +13,6 @@
   ],
   "author": "Ionică Bizău <bizauionica@gmail.com>",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/IonicaBizau/github-org-members.js/issues"
-  },
   "homepage": "https://github.com/IonicaBizau/github-org-members.js",
   "npmName": "github-org-members.js",
   "npmFileMap": [
@@ -33,5 +23,5 @@
       ]
     }
   ],
-  "filename": "github-org-members.js"
+  "filename": "github-org-members.min.js"
 }

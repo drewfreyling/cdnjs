@@ -2,7 +2,7 @@
   "name": "fastclick",
   "filename": "fastclick.min.js",
   "version": "1.0.6",
-  "description": "Polyfill to remove click delays on browsers with touch UIs",
+  "description": "Polyfill to remove click delays on browsers with touch UIs.",
   "homepage": "https://github.com/ftlabs/fastclick",
   "keywords": [
     "fastclick",
@@ -22,12 +22,6 @@
       "email": "m@m.cg"
     }
   ],
-  "repositories": [
-    {
-      "type": "git",
-      "url": "git://github.com/ftlabs/fastclick.git"
-    }
-  ],
   "autoupdate": {
     "source": "git",
     "target": "git://github.com/ftlabs/fastclick.git",
@@ -35,5 +29,10 @@
     "files": [
       "*"
     ]
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/ftlabs/fastclick.git"
+  },
+  "license": "MIT"
 }

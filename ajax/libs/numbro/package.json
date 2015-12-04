@@ -1,6 +1,6 @@
 {
   "name": "numbro",
-  "version": "1.2.2",
+  "version": "1.6.2",
   "description": "Format and manipulate numbers.",
   "homepage": "http://numbrojs.com",
   "author": {
@@ -17,44 +17,18 @@
     "money",
     "percentage"
   ],
-  "main": "./numbro.js",
-  "engines": {
-    "node": "*"
-  },
   "repository": {
     "type": "git",
     "url": "https://github.com/foretagsplatsen/numbro"
   },
-  "bugs": {
-    "url": "https://github.com/foretagsplatsen/numbro/issues"
+  "autoupdate": {
+    "source": "git",
+    "target": "git://github.com/foretagsplatsen/numbro.git",
+    "basePath": "dist",
+    "files": [
+      "**/*"
+    ]
   },
-  "licenses": [
-    {
-      "type": "MIT"
-    }
-  ],
-  "devDependencies": {
-    "grunt": "latest",
-    "grunt-bump": "latest",
-    "grunt-confirm": "latest",
-    "grunt-contrib-concat": "latest",
-    "grunt-contrib-jshint": "latest",
-    "grunt-contrib-nodeunit": "latest",
-    "grunt-contrib-uglify": "latest",
-    "grunt-release": "latest",
-    "uglify-js": "latest"
-  },
-  "scripts": {
-    "test": "grunt test"
-  },
-  "npmName": "numbro",
-  "npmFileMap": [
-    {
-      "basePath": "/dist",
-      "files": [
-        "**/*"
-      ]
-    }
-  ],
-  "filename": "numbro.min.js"
+  "filename": "numbro.min.js",
+  "license": "MIT"
 }

@@ -2,7 +2,7 @@
   "name": "ratchet",
   "filename": "js/ratchet.min.js",
   "version": "2.0.2",
-  "description": "Prototype iPhone apps with simple HTML, CSS, and JS components.",
+  "description": "Build mobile apps with simple HTML, CSS, and JS components.",
   "homepage": "https://github.com/twbs/ratchet",
   "keywords": [
     "mobile",
@@ -19,10 +19,17 @@
       "name": "Jacob Thornon"
     }
   ],
-  "repositories": [
-    {
-      "type": "git",
-      "url": "https://github.com/twbs/ratchet"
-    }
-  ]
+  "autoupdate": {
+    "source": "git",
+    "target": "git://github.com/twbs/ratchet.git",
+    "basePath": "dist",
+    "files": [
+      "**/*"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/twbs/ratchet"
+  },
+  "license": "MIT"
 }

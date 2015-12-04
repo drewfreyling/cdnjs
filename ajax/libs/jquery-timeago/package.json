@@ -1,8 +1,8 @@
 {
   "name": "jquery-timeago",
   "filename": "jquery.timeago.min.js",
-  "version": "1.4.1",
-  "description": "Timeago is a jQuery plugin that makes it easy to support automatically updating fuzzy timestamps (e.g. '4 minutes ago' or 'about 1 day ago') from ISO 8601 formatted dates and times embedded in your HTML (à la microformats).",
+  "version": "1.4.3",
+  "description": "jQuery plugin that makes it easy to support automatically updating fuzzy timestamps (e.g. \"4 minutes ago\" or \"about 1 day ago\").",
   "homepage": "http://timeago.yarp.com/",
   "keywords": [
     "time",
@@ -17,12 +17,6 @@
       "web": "http://ryan.mcgeary.org/"
     }
   ],
-  "repositories": [
-    {
-      "type": "git",
-      "url": "https://github.com/rmm5t/jquery-timeago"
-    }
-  ],
   "autoupdate": {
     "source": "git",
     "target": "git://github.com/rmm5t/jquery-timeago.git",
@@ -30,5 +24,10 @@
     "files": [
       "jquery.timeago.js"
     ]
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rmm5t/jquery-timeago"
+  },
+  "license": "MIT"
 }

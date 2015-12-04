@@ -1,8 +1,8 @@
 {
   "name": "jasmine",
   "filename": "jasmine.min.js",
-  "version": "2.3.4",
-  "description": "DOM-less simple JavaScript testing framework",
+  "version": "2.4.0",
+  "description": "Official packaging of Jasmine's core files for use by Node.js projects.",
   "homepage": "http://jasmine.github.io/",
   "keywords": [
     "bdd",
@@ -19,12 +19,6 @@
       "name": "Christian Williams"
     }
   ],
-  "repositories": [
-    {
-      "type": "git",
-      "url": "https://github.com/jasmine/jasmine.git"
-    }
-  ],
   "autoupdate": {
     "source": "git",
     "target": "git://github.com/jasmine/jasmine.git",
@@ -35,5 +29,10 @@
       "boot.js",
       "jasmine.css"
     ]
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jasmine/jasmine.git"
+  },
+  "license": "MIT"
 }

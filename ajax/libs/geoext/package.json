@@ -12,12 +12,6 @@
     "openlayers",
     "maps"
   ],
-  "repositories": [
-    {
-      "type": "git",
-      "url": "https://github.com/geoext/geoext"
-    }
-  ],
   "maintainers": [
     {
       "name": "The Open Source Geospatial Foundation",
@@ -28,10 +22,12 @@
       "url": "http://geoext.org"
     }
   ],
-  "licenses": [
-    {
-      "type": "BSD",
-      "url": "http://trac.geoext.org/wiki/license"
-    }
-  ]
+  "license": {
+    "type": "BSD",
+    "url": "http://trac.geoext.org/wiki/license"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/geoext/geoext"
+  }
 }

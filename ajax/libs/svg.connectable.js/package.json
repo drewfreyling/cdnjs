@@ -1,18 +1,14 @@
 {
   "name": "svg.connectable.js",
-  "version": "1.2.0",
+  "version": "2.0.0",
   "description": "A JavaScript library for connecting SVG things.",
   "filename": "svg.connectable.min.js",
-  "main": "src/svg.connectable.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "npmName": "svg.connectable.js",
   "npmFileMap": [
     {
-      "basePath": "/src/",
+      "basePath": "dist",
       "files": [
-        "*.js"
+        "**/*"
       ]
     }
   ],
@@ -27,8 +23,5 @@
   ],
   "author": "jillix <contact@jillix.com>",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/jillix/svg.connectable.js/issues"
-  },
   "homepage": "https://github.com/jillix/svg.connectable.js"
 }

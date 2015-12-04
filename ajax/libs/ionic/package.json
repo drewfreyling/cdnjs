@@ -2,21 +2,10 @@
   "name": "ionic",
   "filename": "js/ionic.min.js",
   "description": "Advanced HTML5 Mobile App Framework.",
-  "version": "1.0.0",
+  "version": "1.1.1",
   "keywords": [
     "html5",
     "mobile"
-  ],
-  "repositories": [
-    {
-      "type": "git",
-      "url": "https://github.com/driftyco/ionic.git"
-    }
-  ],
-  "licenses": [
-    {
-      "name": "MIT"
-    }
   ],
   "autoupdate": {
     "source": "git",
@@ -27,5 +16,12 @@
       "js/**/*",
       "fonts/*"
     ]
+  },
+  "license": {
+    "name": "MIT"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/driftyco/ionic.git"
   }
 }

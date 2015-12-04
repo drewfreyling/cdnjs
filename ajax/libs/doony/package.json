@@ -2,7 +2,7 @@
   "name": "doony",
   "filename": "js/doony.min.js",
   "version": "2.1",
-  "description": "UI improvements for Jenkins",
+  "description": "UI Improvements for Jenkins",
   "homepage": "http://doony.org",
   "license": "MIT",
   "keywords": [
@@ -17,11 +17,8 @@
       "name": "Kyle Conroy"
     }
   ],
-  "repositories": [
-    {
-      "type": "git",
-      "url": "https://github.com/kevinburke/doony"
-    }
-  ],
-  "bugs": "https://github.com/kevinburke/doony/issues"
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kevinburke/doony"
+  }
 }

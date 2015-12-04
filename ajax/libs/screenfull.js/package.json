@@ -1,7 +1,7 @@
 {
   "name": "screenfull.js",
   "filename": "screenfull.min.js",
-  "version": "2.0.0",
+  "version": "3.0.0",
   "description": "Simple wrapper for cross-browser usage of the JavaScript Fullscreen API",
   "homepage": "https://github.com/sindresorhus/screenfull.js",
   "keywords": [
@@ -14,12 +14,6 @@
       "web": "http://sindresorhus.com/"
     }
   ],
-  "repositories": [
-    {
-      "type": "github",
-      "url": "https://github.com/sindresorhus/screenfull.js"
-    }
-  ],
   "autoupdate": {
     "source": "git",
     "target": "git://github.com/sindresorhus/screenfull.js.git",
@@ -27,5 +21,9 @@
     "files": [
       "*"
     ]
+  },
+  "repository": {
+    "type": "github",
+    "url": "https://github.com/sindresorhus/screenfull.js"
   }
 }

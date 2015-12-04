@@ -1,8 +1,8 @@
 {
   "name": "flexslider",
   "filename": "flexslider.min.css",
-  "version": "2.5.0",
-  "description": "An awesome, fully responsive jQuery slider plugin.",
+  "version": "2.6.0",
+  "description": "An awesome, fully responsive jQuery slider toolkit.",
   "homepage": "http://www.woothemes.com/flexslider/",
   "keywords": [
     "utility",
@@ -12,12 +12,6 @@
     {
       "name": "WooThemes",
       "web": "http://www.woothemes.com/"
-    }
-  ],
-  "repositories": [
-    {
-      "type": "git",
-      "url": "https://github.com/woothemes/FlexSlider.git"
     }
   ],
   "autoupdate": {
@@ -34,5 +28,10 @@
       "fonts/flexslider-icon.woff",
       "images/bg_play_pause.png"
     ]
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/woothemes/FlexSlider.git"
+  },
+  "license": "GPL-2.0"
 }

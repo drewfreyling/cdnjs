@@ -1,7 +1,7 @@
 {
   "name": "valjs",
   "filename": "jquery.valjs.min.js",
-  "version": "1.0",
+  "version": "1.2",
   "description": "Another jQuery Form Validation plugin",
   "homepage": "http://valjs.io",
   "keywords": [
@@ -18,12 +18,6 @@
     "type": "git",
     "url": "https://github.com/dlid/jquery-valjs.git"
   },
-  "licenses": [
-    {
-      "type": "MIT",
-      "url": "http://www.opensource.org/licenses/mit-license.php"
-    }
-  ],
   "autoupdate": {
     "source": "git",
     "target": "git://github.com/dlid/jquery-valjs.git",
@@ -32,5 +26,6 @@
       "jquery.valjs.min.js",
       "jquery.valjs.js"
     ]
-  }
+  },
+  "license": "MIT"
 }

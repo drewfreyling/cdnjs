@@ -1,8 +1,8 @@
 {
   "name": "textAngular",
-  "filename": "dist/textAngular.min.js",
-  "version": "1.4.1",
-  "description": "A radically powerful Text-Editor/Wysiwyg editor for Angular.js! Create multiple editor instances, two-way-bind HTML content, watch editors for changes and more!",
+  "filename": "textAngular.min.js",
+  "version": "1.4.6",
+  "description": "A radically powerful Text-Editor/Wysiwyg editor for Angular.js",
   "homepage": "http://textAngular.com",
   "keywords": [
     "AngularJS",
@@ -15,12 +15,6 @@
       "name": "SimeonC"
     }
   ],
-  "repositories": [
-    {
-      "type": "git",
-      "url": "https://github.com/fraywing/textAngular.git"
-    }
-  ],
   "autoupdate": {
     "source": "git",
     "target": "git://github.com/fraywing/textAngular.git",
@@ -28,5 +22,10 @@
     "files": [
       "**/*"
     ]
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/fraywing/textAngular.git"
+  },
+  "license": "MIT"
 }

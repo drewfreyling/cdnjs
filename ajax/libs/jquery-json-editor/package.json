@@ -2,13 +2,6 @@
   "name": "jquery-json-editor",
   "version": "1.1.0",
   "description": "A jQuery library for editing JSON data.",
-  "main": "src/jquery-json-editor.js",
-  "directories": {
-    "example": "example"
-  },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "repository": {
     "type": "git",
     "url": "https://github.com/jillix/jQuery-json-editor.git"
@@ -20,9 +13,6 @@
   ],
   "author": "Ionică Bizău <bizauionica@gmail.com> (http://ionicabizau.net/)",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/jillix/jQuery-json-editor/issues"
-  },
   "homepage": "https://github.com/jillix/jQuery-json-editor",
   "npmName": "jquery-json-editor",
   "npmFileMap": [
@@ -33,5 +23,5 @@
       ]
     }
   ],
-  "filename": "jquery-json-editor.js"
+  "filename": "jquery-json-editor.min.js"
 }

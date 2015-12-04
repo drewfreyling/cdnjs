@@ -1,8 +1,8 @@
 {
   "name": "ember-data.js",
   "filename": "ember-data.min.js",
-  "version": "1.0.0-beta.19.2",
-  "description": "A data persistence library for Ember.js.",
+  "version": "2.2.1",
+  "description": "A data layer for your Ember applications.",
   "homepage": "https://github.com/emberjs/data",
   "keywords": [
     "ember",
@@ -16,12 +16,6 @@
       "web": "http://emberjs.com"
     }
   ],
-  "repositories": [
-    {
-      "type": "git",
-      "url": "https://github.com/emberjs/data"
-    }
-  ],
   "autoupdate": {
     "source": "git",
     "target": "git://github.com/components/ember-data.git",
@@ -32,5 +26,10 @@
       "ember-data.js",
       "ember-data.js.map"
     ]
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/emberjs/data"
+  },
+  "license": "MIT"
 }

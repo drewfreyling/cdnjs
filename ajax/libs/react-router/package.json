@@ -1,8 +1,8 @@
 {
   "name": "react-router",
   "filename": "ReactRouter.min.js",
-  "version": "0.13.3",
-  "description": "A complete routing solution for React.js",
+  "version": "1.0.0",
+  "description": "A complete routing library for React.js",
   "keywords": [
     "react",
     "reactjs",
@@ -11,13 +11,18 @@
     "routing"
   ],
   "homepage": "https://github.com/rackt/react-router",
-  "bugs": "https://github.com/rackt/react-router/issues",
-  "autoupdate": {
-    "source": "git",
-    "target": "git://github.com/rackt/react-router.git",
-    "basePath": "/build/umd",
-    "files": [
-      "*.js"
-    ]
-  }
+  "npmName": "react-router",
+  "npmFileMap": [
+    {
+      "basePath": "umd",
+      "files": [
+        "*.js"
+      ]
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/rackt/react-router.git"
+  },
+  "license": "MIT"
 }

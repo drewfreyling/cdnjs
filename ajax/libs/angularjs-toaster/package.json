@@ -1,8 +1,8 @@
 {
   "name": "angularjs-toaster",
   "filename": "toaster.min.js",
-  "version": "0.4.14",
-  "description": "AngularJS Toaster is a customized version of 'toastr' non-blocking notification javascript library.",
+  "version": "0.4.16",
+  "description": "AngularJS Toaster is a customized version of toastr non-blocking notification javascript library",
   "homepage": "https://github.com/jirikavi/AngularJS-Toaster",
   "keywords": [
     "angular",
@@ -14,12 +14,6 @@
       "name": "jirikavi"
     }
   ],
-  "repositories": [
-    {
-      "type": "git",
-      "url": "https://github.com/jirikavi/AngularJS-Toaster"
-    }
-  ],
   "autoupdate": {
     "source": "git",
     "target": "git://github.com/jirikavi/AngularJS-Toaster.git",
@@ -28,5 +22,10 @@
       "toaster*.js",
       "toaster*.css"
     ]
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jirikavi/AngularJS-Toaster"
+  },
+  "license": "MIT"
 }

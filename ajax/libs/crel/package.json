@@ -7,19 +7,6 @@
     "crel",
     "DOM"
   ],
-  "licenses": [
-    {
-      "type": "MIT",
-      "url": "http://www.opensource.org/licenses/mit-license.php"
-    }
-  ],
-  "repositories": [
-    {
-      "type": "git",
-      "url": "https://github.com/korynunn/crel"
-    }
-  ],
-  "bugs": "https://github.com/korynunn/crel/issues",
   "maintainers": [
     {
       "name": "Kory Nunn",
@@ -36,10 +23,9 @@
       ]
     }
   ],
-  "contributors": [
-    {
-      "name": "Kory Nunn",
-      "web": "http://korynunn.com"
-    }
-  ]
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/korynunn/crel"
+  }
 }

@@ -1,10 +1,23 @@
 {
   "name": "bootstrap-slider",
-  "version": "4.9.0",
+  "version": "5.3.0",
   "description": "Slider view component for Twitter Bootstrap.",
   "filename": "bootstrap-slider.min.js",
   "homepage": "https://github.com/seiyria/bootstrap-slider",
   "npmName": "bootstrap-slider",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/seiyria/bootstrap-slider.git"
+  },
+  "author": "Kyle J. Kemp",
+  "license": "BSD",
+  "keywords": [
+    "slider",
+    "bootstrap",
+    "twitter",
+    "slide"
+  ],
+  "readmeFilename": "README.md",
   "npmFileMap": [
     {
       "basePath": "/dist",

@@ -24,9 +24,6 @@
     "transpiler",
     "6to5"
   ],
-  "bugs": {
-    "url": "https://github.com/babel/babel/issues"
-  },
   "npmName": "6to5",
   "npmFileMap": [
     {
@@ -36,5 +33,6 @@
         "browser.js"
       ]
     }
-  ]
+  ],
+  "license": "MIT"
 }

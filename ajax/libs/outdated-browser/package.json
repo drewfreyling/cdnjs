@@ -1,19 +1,13 @@
 {
   "name": "outdated-browser",
   "filename": "outdatedbrowser.min.js",
-  "version": "1.1.0",
-  "description": "It detects outdated browsers and advises users to upgrade to a new version.",
+  "version": "1.1.2",
+  "description": "A time saving tool for developers. It detects outdated browsers and advises users to upgrade to a new version.",
   "repository": {
     "type": "git",
     "url": "https://github.com/burocratik/outdated-browser.git"
   },
   "author": "Bürocratik",
-  "licenses": [
-    {
-      "type": "MIT",
-      "url": "http://zenorocha.mit-license.org/"
-    }
-  ],
   "autoupdate": {
     "source": "git",
     "target": "git://github.com/burocratik/outdated-browser.git",
@@ -24,5 +18,6 @@
       "outdatedbrowser.min.css",
       "outdatedbrowser.min.js"
     ]
-  }
+  },
+  "license": "MIT"
 }

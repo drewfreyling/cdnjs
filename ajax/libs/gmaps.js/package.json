@@ -1,8 +1,8 @@
 {
   "filename": "gmaps.min.js",
   "name": "gmaps.js",
-  "version": "0.4.12",
-  "description": "google maps api with less pain and more fun",
+  "version": "0.4.21",
+  "description": "the easiest way to use Google Maps",
   "keywords": [
     "google maps",
     "maps"
@@ -14,25 +14,19 @@
       "web": "http://hpneo.github.io/"
     }
   ],
-  "repositories": [
-    {
-      "type": "git",
-      "url": "https://github.com/hpneo/gmaps"
-    }
-  ],
-  "licenses": [
-    {
-      "type": "MIT",
-      "url": "https://github.com/hpneo/gmaps/blob/master/README.md"
-    }
-  ],
   "autoupdate": {
     "source": "git",
     "target": "git://github.com/hpneo/gmaps.git",
+    "basePath": "",
     "files": [
       "gmaps.js",
       "gmaps.min.js",
       "gmaps.min.js.map"
     ]
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hpneo/gmaps"
   }
 }

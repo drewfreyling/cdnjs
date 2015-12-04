@@ -7,10 +7,9 @@
   "keywords": [
     "uniform"
   ],
-  "repositories": [
-    {
-      "type": "git",
-      "url": "git://github.com/pixelmatrix/uniform.git"
-    }
-  ]
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/pixelmatrix/uniform.git"
+  },
+  "license": "MIT"
 }

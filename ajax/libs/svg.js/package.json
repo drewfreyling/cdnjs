@@ -1,8 +1,8 @@
 {
   "name": "svg.js",
   "filename": "svg.min.js",
-  "version": "2.0.0",
-  "description": "A lightweight JavaScript library for manipulating and animating svg using an uncluttered syntax.",
+  "version": "2.2.3",
+  "description": "A lightweight library for manipulating and animating SVG.",
   "homepage": "http://svgjs.com/",
   "keywords": [
     "vector",
@@ -15,12 +15,6 @@
       "web": "http://woutfierens.com/"
     }
   ],
-  "repositories": [
-    {
-      "type": "git",
-      "url": "https://github.com/wout/svg.js/"
-    }
-  ],
   "autoupdate": {
     "source": "git",
     "target": "git://github.com/wout/svg.js.git",
@@ -28,5 +22,10 @@
     "files": [
       "*"
     ]
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wout/svg.js/"
+  },
+  "license": "MIT"
 }

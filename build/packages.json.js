@@ -8,10 +8,10 @@ var natcompare = require('./natcompare.js');
 var RSS = require('rss');
 var feed = new RSS({
     title:        'cdnjs.com - library updates',
-    description:  'Track when libraries are added and updated! Created by <a href="http://twitter.com/ryan_kirkman">Ryan Kirkman</a> and <a href="http://twitter.com/neutralthoughts">Thomas Davis</a>, managed by <a href="https://twitter.com/PeterDaveHello">Peter Dave Hello</a>. Sponsored and hosted by <a href="http://cloudflare.com">Cloudflare</a>',
-    site_url:         'http://cdnjs.com/',
-    feed_url:         'http://cdnjs.com/rss.xml',
-    image_url:        'http://cdnjs.com/img/poweredbycloudflare.png',
+    description:  'Track when libraries are added and updated! Created by <a href="https://twitter.com/ryan_kirkman">Ryan Kirkman</a> and <a href="https://twitter.com/neutralthoughts">Thomas Davis</a>, managed by <a href="https://twitter.com/PeterDaveHello">Peter Dave Hello</a>. Sponsored and hosted by <a href="https://cloudflare.com">Cloudflare</a>',
+    site_url:         'https://cdnjs.com/',
+    feed_url:         'https://cdnjs.com/rss.xml',
+    image_url:        'https://cdnjs.com/img/poweredbycloudflare.png',
     copyright:    'Copyright © 2015 Cdnjs. All rights reserved',
     
     author: 'cdnjs team'
@@ -76,7 +76,6 @@ exec('git ls-tree -r --name-only HEAD | grep **/package.json | while read filena
           date:           lib.date
       });
     })
-    fs.writeFileSync('../new-website/public/atom.xml', feed.xml(true), 'utf8');
     fs.writeFileSync('../new-website/public/rss.xml', feed.xml(true), 'utf8');
 
 })
@@ -92,10 +91,22 @@ fs.readFile('../new-website/public/packages.min.json', 'utf8', function(err, dat
       delete package.main;
       delete package.scripts;
       delete package.bugs;
-      delete package.autoupdate;
       delete package.npmFileMap;
       delete package.dependencies;
       delete package.devDependencies;
+      var temp = {}
+      if (package.npmName) {
+        temp.type = 'npm';
+        temp.target = package.npmName;
+        package.autoupdate = temp;
+      } else if (package.autoupdate) {
+        temp.type = package.autoupdate.source;
+        temp.target = package.autoupdate.target;
+        package.autoupdate = temp;
+      } else {
+        delete package.autoupdate;
+      }
+      delete package.npmName;
       package.assets = Array();
       var oldVersions = Array();
       var pkgSave;
@@ -105,7 +116,7 @@ fs.readFile('../new-website/public/packages.min.json', 'utf8', function(err, dat
           pkgSave = pkg;
         }
       });
-      var versions = glob.sync("ajax/libs/"+package.name+"/!(package.json)");
+      var versions = glob.sync("ajax/libs/"+package.name+"/!(package.json)/").map(function(ver){return ver.slice(0, -1);});
       async.each(versions, function(version, callback) {
         var temp = Object();
         temp.version = version.replace(/^.+\//, "");
@@ -119,9 +130,7 @@ fs.readFile('../new-website/public/packages.min.json', 'utf8', function(err, dat
           temp.files = glob.sync(version + "/**/*", {nodir:true});
           for (var i = 0; i < temp.files.length; i++){
             var filespec = temp.files[i];
-            temp.files[i] = {
-              name: filespec.replace(version + "/", "")
-            };
+            temp.files[i] = filespec.replace(version + "/", "");
           }
         }
         package.assets.push(temp);

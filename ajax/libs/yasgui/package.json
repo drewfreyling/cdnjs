@@ -1,17 +1,9 @@
 {
   "name": "yasgui",
   "description": "Yet Another SPARQL GUI",
-  "version": "1.1.10",
-  "main": "src/main.js",
-  "licenses": [
-    {
-      "type": "MIT",
-      "url": "http://yasgui.org/license.txt"
-    }
-  ],
+  "version": "2.1.2",
   "author": "Laurens Rietveld",
   "homepage": "http://yasgui.org",
-  "bugs": "https://github.com/YASGUI/YASQE/issues/",
   "keywords": [
     "JavaScript",
     "SPARQL",
@@ -42,5 +34,6 @@
         "*.min.css.map"
       ]
     }
-  ]
+  ],
+  "license": "MIT"
 }

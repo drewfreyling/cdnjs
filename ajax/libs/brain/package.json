@@ -2,7 +2,7 @@
   "name": "brain",
   "filename": "brain.min.js",
   "version": "0.6.3",
-  "description": "Neural networks in JavaScript.",
+  "description": "Neural network library",
   "homepage": "https://github.com/harthur/brain",
   "keywords": [
     "brain",
@@ -14,10 +14,9 @@
       "web": "https://github.com/harthur"
     }
   ],
-  "repositories": [
-    {
-      "type": "git",
-      "url": "https://github.com/harthur/brain.git"
-    }
-  ]
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/harthur/brain.git"
+  },
+  "license": "MIT"
 }

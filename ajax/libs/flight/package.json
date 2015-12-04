@@ -19,10 +19,9 @@
       "web": "http://twitter.com/angustweets"
     }
   ],
-  "repositories": [
-    {
-      "type": "git",
-      "url": "https://github.com/flightjs/flight"
-    }
-  ]
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/flightjs/flight"
+  },
+  "license": "MIT"
 }

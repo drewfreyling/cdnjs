@@ -1,17 +1,9 @@
 {
   "name": "yasr",
   "description": "Yet Another SPARQL Resultset Visualizer",
-  "version": "2.5.5",
-  "main": "src/main.js",
-  "licenses": [
-    {
-      "type": "MIT",
-      "url": "http://yasr.yasgui.org/license.txt"
-    }
-  ],
+  "version": "2.6.3",
   "author": "Laurens Rietveld",
   "homepage": "http://yasr.yasgui.org",
-  "bugs": "https://github.com/YASGUI/YASR/issues/",
   "keywords": [
     "JavaScript",
     "SPARQL",
@@ -42,5 +34,6 @@
         "*.min.css.map"
       ]
     }
-  ]
+  ],
+  "license": "MIT"
 }

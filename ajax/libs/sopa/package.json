@@ -1,6 +1,6 @@
 {
   "name": "sopa",
-  "filename": "stopcensorship.js",
+  "filename": "stopcensorship.min.js",
   "version": "1.0",
   "description": "Use this script on your site to protest censorship of the Internet.",
   "homepage": "https://github.com/dougmartin/Stop-Censorship",
@@ -12,10 +12,8 @@
       "name": "Doug Martin"
     }
   ],
-  "repositories": [
-    {
-      "type": "git",
-      "url": "https://github.com/dougmartin/Stop-Censorship"
-    }
-  ]
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dougmartin/Stop-Censorship"
+  }
 }

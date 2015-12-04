@@ -1,6 +1,6 @@
 {
   "name": "jssip",
-  "description": "JavaScript SIP library",
+  "description": "the Javascript SIP library",
   "npmName": "jssip",
   "npmFileMap": [
     {
@@ -11,7 +11,7 @@
       ]
     }
   ],
-  "version": "0.6.30",
+  "version": "0.7.10",
   "filename": "jssip.min.js",
   "homepage": "http://jssip.net",
   "keywords": [
@@ -29,11 +29,9 @@
       "web": "http://dev.sipdoc.net"
     }
   ],
-  "bugs": "https://github.com/versatica/JsSIP/issues",
-  "repositories": [
-    {
-      "type": "git",
-      "url": "git://github.com/versatica/JsSIP.git"
-    }
-  ]
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/versatica/JsSIP.git"
+  },
+  "license": "MIT"
 }

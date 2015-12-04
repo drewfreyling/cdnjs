@@ -8,6 +8,10 @@
     "jquery",
     "countdown"
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kbwood/countdown.git"
+  },
   "maintainers": [
     {
       "name": "Keith Wood",
@@ -17,5 +21,6 @@
       "name": "Keith Wood",
       "web": "https://github.com/kbwood/countdown"
     }
-  ]
+  ],
+  "license": "MIT"
 }

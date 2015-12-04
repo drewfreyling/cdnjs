@@ -10,18 +10,6 @@
     "email": "dan.eden@me.com",
     "url": "http://daneden.me"
   },
-  "repositories": [
-    {
-      "type": "git",
-      "url": "git://github.com/daneden/Toast"
-    }
-  ],
-  "licenses": [
-    {
-      "type": "MIT",
-      "url": "https://github.com/daneden/Toast/blob/master/LICENSE.txt"
-    }
-  ],
   "keywords": [
     "toast",
     "css"
@@ -33,5 +21,9 @@
     "files": [
       "*"
     ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/daneden/Toast"
   }
 }

@@ -1,8 +1,8 @@
 {
   "name": "jquery.imagesloaded",
   "filename": "imagesloaded.pkgd.min.js",
-  "version": "3.1.8",
-  "description": "jQuery plugin that triggers a callback after all images have been loaded",
+  "version": "3.2.0",
+  "description": "You images done yet or what?",
   "homepage": "http://desandro.github.com/imagesloaded/",
   "keywords": [
     "images",
@@ -19,12 +19,6 @@
       "web": "http://darsa.in/"
     }
   ],
-  "repositories": [
-    {
-      "type": "git",
-      "url": "https://github.com/desandro/imagesloaded"
-    }
-  ],
   "npmName": "imagesloaded",
   "npmFileMap": [
     {
@@ -33,5 +27,10 @@
         "imagesloaded*.js"
       ]
     }
-  ]
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/desandro/imagesloaded"
+  },
+  "license": "MIT"
 }

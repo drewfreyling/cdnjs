@@ -1,8 +1,8 @@
 {
   "name": "html2canvas",
-  "filename": "html2canvas.js",
+  "filename": "html2canvas.min.js",
   "version": "0.4.1",
-  "description": "This script allows you to take \"screenshots\" of webpages or parts of it, directly on the users browser.",
+  "description": "Screenshots with JavaScript",
   "homepage": "http://html2canvas.hertzen.com/",
   "keywords": [
     "canvas",
@@ -14,12 +14,6 @@
     "email": "niklasvh@gmail.com",
     "url": "http://hertzen.com"
   },
-  "repositories": [
-    {
-      "type": "git",
-      "url": "https://github.com/niklasvh/html2canvas.git"
-    }
-  ],
   "license": "MIT",
   "autoupdate": {
     "source": "git",
@@ -31,5 +25,9 @@
       "html2canvas.svg.js",
       "html2canvas.svg.min.js"
     ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/niklasvh/html2canvas.git"
   }
 }

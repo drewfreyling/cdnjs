@@ -2,7 +2,7 @@
   "name": "knockout-validation",
   "filename": "knockout.validation.min.js",
   "version": "2.0.3",
-  "description": "A validation library for Knockout JS",
+  "description": "A KnockoutJS Plugin for model and property validation",
   "homepage": "https://github.com/Knockout-Contrib/Knockout-Validation",
   "license": "MIT",
   "keywords": [
@@ -25,12 +25,6 @@
       "web": "http://www.crissdev.com/"
     }
   ],
-  "repositories": [
-    {
-      "type": "git",
-      "url": "https://github.com/Knockout-Contrib/Knockout-Validation.git"
-    }
-  ],
   "npmName": "knockout.validation",
   "npmFileMap": [
     {
@@ -45,5 +39,9 @@
         "localization/*"
       ]
     }
-  ]
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Knockout-Contrib/Knockout-Validation.git"
+  }
 }

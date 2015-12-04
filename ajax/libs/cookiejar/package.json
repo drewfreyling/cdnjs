@@ -19,10 +19,9 @@
       "web": "http://www.walterdavisstudio.com/"
     }
   ],
-  "repositories": [
-    {
-      "type": "git",
-      "url": "https://github.com/walterdavis/cookiejar.git"
-    }
-  ]
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/walterdavis/cookiejar.git"
+  },
+  "license": "Apache-2.0"
 }

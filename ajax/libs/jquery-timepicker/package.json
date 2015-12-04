@@ -1,18 +1,12 @@
 {
   "name": "jquery-timepicker",
-  "version": "1.8.0",
+  "version": "1.8.8",
   "filename": "jquery.timepicker.min.css",
   "title": "jquery-timepicker",
   "author": {
     "name": "Jon Thornton",
     "url": "https://github.com/jonthornton"
   },
-  "licenses": [
-    {
-      "type": "MIT",
-      "url": "MIT-LICENSE.txt"
-    }
-  ],
   "dependencies": {
     "jquery": ">=1.7"
   },
@@ -24,6 +18,10 @@
     "ui",
     "google calendar"
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jonthornton/jquery-timepicker.git"
+  },
   "homepage": "http://jonthornton.github.com/jquery-timepicker/",
   "autoupdate": {
     "source": "git",
@@ -32,5 +30,6 @@
     "files": [
       "jquery.timepicker.*"
     ]
-  }
+  },
+  "license": "MIT"
 }

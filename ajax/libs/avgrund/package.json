@@ -17,18 +17,6 @@
       "web": "http://hakim.se/"
     }
   ],
-  "repositories": [
-    {
-      "type": "git",
-      "url": "https://github.com/hakimel/Avgrund.git"
-    }
-  ],
-  "licenses": [
-    {
-      "type": "MIT",
-      "url": "https://github.com/hakimel/Avgrund/blob/master/LICENSE"
-    }
-  ],
   "autoupdate": {
     "source": "git",
     "target": "git://github.com/hakimel/Avgrund.git",
@@ -37,5 +25,10 @@
       "css/avgrund*",
       "js/avgrund*"
     ]
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hakimel/Avgrund.git"
   }
 }

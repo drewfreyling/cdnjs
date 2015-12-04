@@ -2,10 +2,6 @@
   "name": "jquery-prompt21",
   "version": "1.1.1",
   "description": "A minimalist jQuery prompt plugin for the 21st Century.",
-  "main": "src/jquery-prompt21.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "repository": {
     "type": "git",
     "url": "https://github.com/jillix/jQuery-prompt21.git"
@@ -16,9 +12,6 @@
   ],
   "author": "jillix <contact@jillix.com>",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/jillix/jQuery-prompt21/issues"
-  },
   "homepage": "https://github.com/jillix/jQuery-prompt21",
   "npmName": "jquery-prompt21",
   "npmFileMap": [
@@ -29,5 +22,5 @@
       ]
     }
   ],
-  "filename": "jquery-prompt21.js"
+  "filename": "jquery-prompt21.min.js"
 }

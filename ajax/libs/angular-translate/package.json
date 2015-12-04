@@ -2,7 +2,7 @@
   "name": "angular-translate",
   "filename": "angular-translate.min.js",
   "description": "i18n for your Angular apps, made easy",
-  "version": "2.7.2",
+  "version": "2.8.1",
   "homepage": "http://angular-translate.github.io",
   "keywords": [
     "framework",
@@ -12,36 +12,18 @@
     "angular.js",
     "angular-translate"
   ],
-  "contributors": [
+  "npmName": "angular-translate",
+  "npmFileMap": [
     {
-      "name": "Pascal Precht"
-    },
-    {
-      "name": "Max Prychynenko"
-    },
-    {
-      "name": "Jan Philipp"
+      "basePath": "/dist/",
+      "files": [
+        "*.js"
+      ]
     }
   ],
-  "repositories": [
-    {
-      "type": "git",
-      "url": "https://github.com/angular-translate/bower-angular-translate"
-    }
-  ],
-  "bugs": "https://github.com/angular-translate/angular-translate/issues",
-  "licenses": [
-    {
-      "type": "MIT",
-      "url": "https://github.com/angular-translate/angular-translate/blob/master/LICENSE"
-    }
-  ],
-  "autoupdate": {
-    "source": "git",
-    "target": "git://github.com/angular-translate/bower-angular-translate.git",
-    "basePath": "",
-    "files": [
-      "*.js"
-    ]
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/angular-translate/bower-angular-translate"
   }
 }
