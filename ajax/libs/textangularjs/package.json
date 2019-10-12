@@ -1,0 +1,31 @@
+{
+  "name": "textangularjs",
+  "filename": "textAngular.min.js",
+  "version": "2.1.2",
+  "description": "A radically powerful Text-Editor/Wysiwyg editor for Angular.js. This is a fork of textAngular that works with Angular 1.7+",
+  "homepage": "http://textAngular.com",
+  "keywords": [
+    "AngularJS",
+    "text editor",
+    "WYSIWYG",
+    "directive"
+  ],
+  "maintainers": [
+    {
+      "name": "antosarho"
+    }
+  ],
+  "autoupdate": {
+    "source": "git",
+    "target": "git://github.com/antosarho/textAngularJs.git",
+    "basePath": "dist/",
+    "files": [
+      "**/*"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/antosarho/textAngularJs"
+  },
+  "license": "MIT"
+}
